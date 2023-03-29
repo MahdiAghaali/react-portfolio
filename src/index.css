@@ -25,3 +25,19 @@ code {
     'Courier New',
     monospace;
 }
+
+body,
+html,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --bg: #222831;
+  --fg: #393e46;
+  --hl: #00adb5;
+  --white: #eee;
+  --red: #ff2e63;
+  --orange: #ff9a00;
+}
