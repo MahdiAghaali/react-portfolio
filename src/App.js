@@ -1,14 +1,15 @@
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Landing from './pages/landing/Landing';
+import Projects from './pages/projects/Projects';
+import Social from './pages/Social/Social';
 
 const App = () => (
   <>
     <Header />
-    <Routes>
-      <Route path="/" element={<Landing />} />
-    </Routes>
+    <Landing />
+    <Projects />
+    <Social />
   </>
 );
 
