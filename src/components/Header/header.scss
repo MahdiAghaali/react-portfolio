@@ -13,11 +13,12 @@ header {
     height: 100vh;
     background-color: var(--fg);
     border-right: 1px solid var(--hl);
-    top: 0px;
+    top: 0;
     left: -100%;
     transition: all 0.3s ease-in-out;
     z-index: 3;
-    ul{
+
+    ul {
       margin: 0;
       padding: 0;
       list-style: none;
@@ -26,24 +27,26 @@ header {
       gap: 20px;
     }
   }
-  nav#menu.isOpen{
+
+  nav#menu.isOpen {
     left: 0%;
   }
 
-  #shadow{
+  #shadow {
     width: 100vw;
     height: 100vh;
     position: fixed;
     display: none;
-    top: 0px;
-    left: 0px;
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(0px);
+    top: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
     background-color: rgba(0, 0, 0, 0);
     transition: all 0.5s;
     z-index: 2;
   }
-  #shadow.isOpen{
+
+  #shadow.isOpen {
     display: block;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
